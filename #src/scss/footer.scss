@@ -1,0 +1,301 @@
+// .container {
+// 	max-width: 1300px;
+// }
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// padding: 56px 0 80px 0;
+	position: relative;
+	overflow: hidden;
+	.line {
+		position: absolute;
+		right: 0;
+		top: 60%;
+		width: 854px;
+		height: 587px;
+		transform: translate(55%, -50%) rotate(70deg);
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.footer__container {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.footer__top {
+			// border: 1px solid #000;
+			// max-width: 1400px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			background-color: #f0faff;
+			padding: 56px 0 46px 0;
+			.container {
+				max-width: 1400px;
+				display: flex;
+				justify-content: flex-start;
+				// border: 1px solid #000;
+				padding: 0 30px 0 30px;
+
+				@include tablet {
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+				}
+				.logo {
+					flex-basis: 15%;
+					@include laptop {
+						// flex-basis: 100%;
+					}
+					@include big_phone {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+					}
+
+					.img {
+					}
+					.icons {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						max-width: 160px;
+						width: 100%;
+						margin-top: 40px;
+						.icon {
+							width: 40px;
+							height: 40px;
+							img {
+								width: 100%;
+								height: 100%;
+							}
+						}
+					}
+					.button {
+						button {
+							padding: 10px 30px;
+							background: #52c3f1;
+							font-family: "Roboto", sans-serif;
+							margin-top: 30px;
+							color: white;
+							font-size: 16px;
+							text-transform: uppercase;
+						}
+					}
+				}
+
+				.menu {
+					// border: 1px solid #000;
+					flex-basis: 85%;
+					display: flex;
+					position: relative;
+					left: 35px;
+					@include laptop {
+						margin-left: 20px;
+						flex-direction: column;
+					}
+					@include tablet {
+						margin-top: 20px;
+						flex-direction: column;
+					}
+					@include big_phone {
+						display: none;
+					}
+					.hor__ul {
+						width: 85%;
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+						margin-top: -30px;
+						@include tablet {
+							margin-top: 20px;
+							flex-direction: column;
+						}
+						li {
+							margin-top: 30px;
+							color: #331b7b;
+							font-family: Roboto;
+							font-size: 22px;
+							font-size: calc(10px + 12 * (100vw / 1400));
+							font-weight: 700;
+							font-style: normal;
+							line-height: 19.99px;
+							text-align: left;
+							@media (min-width: 1600px) {
+								font-size: 22px;
+							}
+							ul {
+								margin-top: 36px;
+								li {
+									color: #331b7b;
+									font-family: Roboto;
+									font-size: 24px;
+									font-size: calc(10px + 14 * (100vw / 1400));
+									font-weight: 400;
+									font-style: normal;
+									letter-spacing: normal;
+									line-height: 24.6px;
+									margin-top: 37px;
+									margin-top: calc(15px + 22 * (100vw / 1400));
+									@media (min-width: 1600px) {
+										font-size: 24px;
+									}
+								}
+							}
+						}
+					}
+					.ver__ul {
+						width: 15%;
+						@include laptop {
+							margin-top: 40px;
+						}
+						@include tablet {
+							margin-left: 0px;
+
+							margin-top: 30px;
+						}
+						li {
+							color: #331b7b;
+							font-family: Roboto;
+							font-size: 22px;
+							font-size: calc(10px + 12 * (100vw / 1400));
+							font-weight: 700;
+							line-height: 19.99px;
+							margin-top: 41px;
+						}
+						li:first-child {
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.footer__body {
+			width: 100%;
+			display: flex;
+			background-color: #331b7b;
+			padding: 41px 0 70px 0;
+
+			.container {
+				justify-content: flex-end;
+				@include tablet {
+					justify-content: center;
+				}
+				.container__inside {
+					flex-basis: 85%;
+					// border: 1px solid #000;
+					display: flex;
+					position: relative;
+					left: 45px;
+					@include laptop {
+						flex-basis: 80%;
+					}
+					@include tablet {
+						left: 0;
+					}
+					.one__more {
+						flex-basis: 100%;
+						// border: 1px solid #000;
+						display: flex;
+						flex-wrap: wrap;
+						// flex-direction: column;
+						// align-items: center;
+						// justify-content: center;
+						// border: 1px solid #000;
+
+						@include laptop {
+							margin-top: -40px;
+						}
+						@include tablet {
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+						}
+						.item {
+							@include laptop {
+								margin-top: 40px;
+								// flex-basis: 100%;
+							}
+							@include tablet {
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								justify-content: center;
+							}
+							h2 {
+								color: #63c8f0;
+
+								font-family: Roboto;
+								font-size: 22px;
+								font-size: calc(10px + 12 * (100vw / 1400));
+								font-weight: 700;
+								line-height: 19.99px;
+								@media (min-width: 1600px) {
+									font-size: 22px;
+								}
+							}
+							p {
+								color: #ffffff;
+								font-family: Roboto;
+								font-size: 19px;
+								font-size: calc(10px + 9 * (100vw / 1400));
+								font-weight: 400;
+								margin-top: 43px;
+								@media (min-width: 1600px) {
+									font-size: 19px;
+								}
+								@include tablet {
+									text-align: center;
+								}
+							}
+						}
+						.item:first-child {
+							flex-basis: 27.5%;
+						}
+						.item:nth-child(2) {
+							flex-basis: 30%;
+						}
+						.item:last-child {
+							// margin-left: 188px;
+						}
+						@include tablet {
+							.item {
+								flex-basis: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.footer__bot {
+			width: 100%;
+			background-color: #331b7b;
+			// border: 1px solid #000;
+			align-items: flex-start;
+
+			.container {
+				padding: 0 0 81px 0;
+				color: #ffffff;
+				font-family: Roboto;
+				font-size: 22px;
+				font-weight: 400;
+				// line-height: 87.63px;
+				// border: 1px solid #000;
+				align-items: flex-start;
+				@include tablet {
+					align-items: center;
+					justify-content: center;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gulp</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+</head>
+
+<body>
+
+	@@include("_header.html")
+	<form action="" class="search__form">
+		<div class="form__cont">
+			<span><input type="text"><img src="img/clear.png" alt="" class="clear"> <img src="img/cl.png" alt=""
+					class="close"></span>
+		</div>
+
+	</form>
+	<main>
+		<section class="section__swiper-home section">
+			<div class="section__background">
+				<div class="circle"></div>
+				<div class="line">
+					<img src="img/lines/yzor.png" alt="">
+				</div>
+				<div class="line2">
+					<img src="img/lines/yzor.png" alt="">
+				</div>
+				<div class="line3">
+					<img src="img/lines/yzor.png" alt="">
+				</div>
+
+			</div>
+			<div class="swiper-container-home">
+
+				<div class="swiper-wrapper">
+
+					<div class="swiper-slide">
+						<div class="slide__inside">
+							<div class="slide__text">
+								<p class="home_p">
+									<br>
+									<span>Одесский Колледж</span>
+									Компьютерных технологий <span class="serv">«СЕрВЕР»</span>
+									<br>
+									<!-- <span>Обьявляем открытым!</span> -->
+								</p>
+								<p>— это акрредитованное учебное
+									заведение МОН Украины</p>
+								<button>Подробнее</button>
+							</div>
+							<div class="slide__image">
+								<img src="img/childs.png" alt="">
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-slide">Slide 2</div>
+
+
+				</div>
+
+				<div class="swiper-pagination-courses"></div>
+
+
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
+
+				<!-- <div class="swiper-scrollbar"></div> -->
+			</div>
+		</section>
+		<section class="section__learnin-types section">
+			<div class="container__learning-types container">
+				<div class="container__header">
+					<div class="container__title" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Виды обучения
+					</div>
+				</div>
+				<div class="container__body">
+					<div class="item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+						<div class="item__header">
+							<img src="img/type1.png" alt="">
+						</div>
+						<div class="item__body">
+							<h3>Колледж</h3>
+							<p>Предвысшее и высшее образование
+								для выпускников 9-11 классов</p>
+							<button>Подробнее</button>
+						</div>
+
+					</div>
+					<div class="item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+						<div class="item__header">
+							<img src="img/type2.png" alt="">
+						</div>
+						<div class="item__body">
+							<h3>Курсы</h3>
+							<p>Предвысшее и высшее образование
+								для выпускников 9-11 классов</p>
+							<button>Подробнее</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section__home-adv section">
+			<div class="container__home-adv container">
+				<div class="container__header">
+					<div class="container__title" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Наши
+						преимущества</div>
+				</div>
+				<div class="container__body">
+					<div class="item">
+						<div class="img">
+							<img src="img/preim/one.png" alt="">
+						</div>
+						<div class="text">
+							Высокое качество
+							обучения
+						</div>
+					</div>
+					<div class="item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+						<div class="img">
+							<img src="img/preim/two.png" alt="">
+						</div>
+						<div class="text">
+							Профессионализм
+							преподавателей
+						</div>
+					</div>
+					<div class="item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+						<div class="img">
+							<img src="img/preim/three.png" alt="">
+						</div>
+						<div class="text">
+							Подготовка
+							специалистов
+							— практиков
+						</div>
+					</div>
+					<div class="item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+						<div class="img">
+							<img src="img/preim/four.png" alt="">
+						</div>
+						<div class="text">
+							Возможность продолжить
+							обучение до любого
+							уровня без проблем
+						</div>
+					</div>
+					<div class="item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+						<div class="img">
+							<img src="img/preim/five.png" alt="">
+						</div>
+						<div class="text">
+							Особый подход
+							и внимание
+							к каждому
+
+						</div>
+					</div>
+					<div class="item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+						<div class="img">
+							<img src="img/preim/six.png" alt="">
+						</div>
+						<div class="text">
+							Малоком-
+							плектные
+							группы
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section__life section">
+			<div class="container__life container">
+				<div class="container__header">
+					<div class="container__title">Жизнь колледжа</div>
+				</div>
+				<div class="swiper-container-life">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="slide__header">
+								<img src="img/kvn.png" alt="">
+							</div>
+
+							<div class="slide__body">
+								<h3>Клуб весёлых
+									и находчивых студентов</h3>
+								<small>15.02.2020</small>
+								<p>В нашем колледже каждый год проводится праздник КВН.
+									Студенты создают команды, причём это могут быть сборные команды или команды только из
+									студентов одной группы, или одного курса.</p>
+								<a href="">Читать далее...</a>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="slide__header">
+								<img src="img/table.jpg" alt="">
+							</div>
+
+							<div class="slide__body">
+								<h3>Клуб интеллектуальных
+									игр «Одиссей»</h3>
+								<small>15.02.2020</small>
+								<p>С 2012 года в колледже начал работать клуб интеллектуальных игр «Одиссей». Организовал этот
+									клуб преподаватель общественных наук Антон Юрьевич Семенюк. Название клуба придумали сами
+									ребята.</p>
+								<a href="">Читать далее...</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide__header">
+								<img src="img/body.jpg" alt="">
+							</div>
+
+							<div class="slide__body">
+								<h3>Туристический
+									слёт в лесках</h3>
+								<small>15.02.2020</small>
+								<p>В сентябре в Одессе ещё тепло, почти как летом, но природа уже начинает становиться
+									по-осеннему красивой. Туристический слёт — это всегда очень интересное, увлекательное
+									мероприятие и для студентов, </p>
+								<a href="">Читать далее...</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide__header">
+								<img src="img/kvn.png" alt="">
+							</div>
+
+							<div class="slide__body">
+								<h3>Клуб весёлых
+									и находчивых студентов</h3>
+								<small>15.02.2020</small>
+								<p>В нашем колледже каждый год проводится праздник КВН.
+									Студенты создают команды, причём это могут быть сборные команды или команды только из
+									студентов одной группы, или одного курса.</p>
+								<a href="">Читать далее...</a>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="slide__header">
+								<img src="img/table.jpg" alt="">
+							</div>
+
+							<div class="slide__body">
+								<h3>Клуб интеллектуальных
+									игр «Одиссей»</h3>
+								<small>15.02.2020</small>
+								<p>С 2012 года в колледже начал работать клуб интеллектуальных игр «Одиссей». Организовал этот
+									клуб преподаватель общественных наук Антон Юрьевич Семенюк. Название клуба придумали сами
+									ребята.</p>
+								<a href="">Читать далее...</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide__header">
+								<img src="img/body.jpg" alt="">
+							</div>
+
+							<div class="slide__body">
+								<h3>Туристический
+									слёт в лесках</h3>
+								<small>15.02.2020</small>
+								<p>В сентябре в Одессе ещё тепло, почти как летом, но природа уже начинает становиться
+									по-осеннему красивой. Туристический слёт — это всегда очень интересное, увлекательное
+									мероприятие и для студентов, </p>
+								<a href="">Читать далее...</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide__header">
+								<img src="img/kvn.png" alt="">
+							</div>
+
+							<div class="slide__body">
+								<h3>Клуб весёлых
+									и находчивых студентов</h3>
+								<small>15.02.2020</small>
+								<p>В нашем колледже каждый год проводится праздник КВН.
+									Студенты создают команды, причём это могут быть сборные команды или команды только из
+									студентов одной группы, или одного курса.</p>
+								<a href="">Читать далее...</a>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="slide__header">
+								<img src="img/table.jpg" alt="">
+							</div>
+
+							<div class="slide__body">
+								<h3>Клуб интеллектуальных
+									игр «Одиссей»</h3>
+								<small>15.02.2020</small>
+								<p>С 2012 года в колледже начал работать клуб интеллектуальных игр «Одиссей». Организовал этот
+									клуб преподаватель общественных наук Антон Юрьевич Семенюк. Название клуба придумали сами
+									ребята.</p>
+								<a href="">Читать далее...</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide__header">
+								<img src="img/body.jpg" alt="">
+							</div>
+
+							<div class="slide__body">
+								<h3>Туристический
+									слёт в лесках</h3>
+								<small>15.02.2020</small>
+								<p>В сентябре в Одессе ещё тепло, почти как летом, но природа уже начинает становиться
+									по-осеннему красивой. Туристический слёт — это всегда очень интересное, увлекательное
+									мероприятие и для студентов, </p>
+								<a href="">Читать далее...</a>
+							</div>
+						</div>
+
+
+
+
+
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination home"></div>
+
+
+				</div>
+			</div>
+		</section>
+		<section class="section__form section">
+			<div class="container__form container">
+				<div class="container__header" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+					<div class="container__title">ОСТАЛИСЬ ВОПРОСЫ?</div>
+				</div>
+				<div class="container__body">
+					<form action="">
+						<div class="input-data" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+							<input type="text" required>
+							<label for="">
+								Имя
+							</label>
+						</div>
+						<div class="input-data" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+							<input type="text" required>
+							<label for="">
+								Телефон
+							</label>
+						</div>
+						<div class="input-data" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+							<input type="text" required>
+							<label for="">
+								Ваш вопрос
+							</label>
+						</div>
+						<button data-aos="fade-up" data-aos-anchor-placement="center-bottom">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+
+
+	</main>
+
+	@@include("_footer.html")
+
+
+
+
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js
+	"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<!-- <script src="js/slick.min.js"></script> -->
+	<script src="js/script.min.js"></script>
+	<script>
+
+	</script>
+</body>
+
+</html>
