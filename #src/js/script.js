@@ -5,6 +5,7 @@
 @@include("animation.js");
 @@include("accordion.js");
 @@include("progress.js");
+@@include("range.js");
 
 
 function testWebP(callback) {
@@ -81,3 +82,4 @@ image__video.addEventListener('click', function () {
 		video.pause();
 	}
 })
+

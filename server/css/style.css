@@ -3258,6 +3258,183 @@ button.swiper-pagination-bullet {
   height: 100%;
 }
 
+.section__creating {
+  padding: 90px 30px;
+  background: #f1faff;
+}
+
+.section__creating .container__creating {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__creating .container__creating .container__body {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section__creating .container__creating .container__body .body__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__creating .container__creating .container__body .body__header .image {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.section__creating .container__creating .container__body .body__header .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.section__creating .container__creating .container__body .body__header .text {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+
+.section__creating .container__creating .container__body .body__header .text p {
+  font-size: 20px;
+  margin-top: 50px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.section__creating .container__creating .container__body .body__header .text p:first-child {
+  margin-top: 0;
+}
+
+.section__creating .container__creating .container__body .body__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section__creating .container__creating .container__body .body__body button {
+  color: #51c4f0;
+  background: white;
+  font-size: 20px;
+  padding: 5px 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.section__creating .container__creating .container__footer {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.section__creating .container__creating .container__footer .slidecontainer {
+  width: 100%;
+}
+
+.section__creating .container__creating .container__footer .slidecontainer input[type="range"] {
+  overflow: hidden;
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: #f1faff;
+  height: 20px;
+}
+
+.section__creating .container__creating .container__footer .slidecontainer input[type="range"]::-webkit-slider-runnable-track {
+  height: 20px;
+  -webkit-appearance: none;
+  color: #220d97;
+}
+
+.section__creating .container__creating .container__footer .slidecontainer input[type="range"]::-webkit-slider-thumb {
+  width: 20px;
+  -webkit-appearance: none;
+  height: 20px;
+  background: #27006e;
+  -webkit-box-shadow: -80px 0 0 80px #110674;
+          box-shadow: -80px 0 0 80px #110674;
+}
+
+.section__creating .container__creating .container__footer .slidecontainer .slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background: #110674;
+  cursor: pointer;
+}
+
+.section__creating .container__creating .container__footer .slidecontainer input[type="range"]::-moz-range-progress {
+  height: 50%;
+  background-color: #110674;
+}
+
+.section__creating .container__creating .container__footer .slidecontainer input[type="range"]::-moz-range-track {
+  height: 50%;
+  background-color: #29dbe7;
+}
+
+.section__creating .container__creating .container__footer .slidecontainer input[type="range"]::-ms-fill-lower {
+  height: 50%;
+  background-color: #110674;
+}
+
+.section__creating .container__creating .container__footer .slidecontainer input[type="range"]::-ms-fill-upper {
+  height: 50%;
+  background-color: #110674;
+}
+
+.section__creating .container__creating .container__footer .years {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.section__creating .container__creating .container__footer .years .cont {
+  width: 52%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section__creating .container__creating .container__footer .years .cont p {
+  font-size: 20px;
+  font-family: Roboto;
+}
+
 body.lock {
   overflow-y: hidden;
 }
@@ -4691,6 +4868,12 @@ header.show {
     margin-top: 30px;
   }
 
+  .section__creating .container__creating .container__body .body__header .text p {
+    font-size: calc(15px + 10 * (100vw / 1600));
+    margin-top: 20px;
+    line-height: 25px;
+  }
+
   header {
     height: 135px;
   }
@@ -5189,6 +5372,34 @@ header.show {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
     margin-bottom: 40px;
+  }
+
+  .section__creating .container__creating .container__body .body__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .section__creating .container__creating .container__body .body__header .text {
+    margin-top: 30px;
+  }
+
+  .section__creating .container__creating .container__body .body__header .text p {
+    text-align: center;
+  }
+
+  .section__creating .container__creating .container__body .body__body {
+    margin: 20px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .search__form.show {

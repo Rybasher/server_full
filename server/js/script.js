@@ -451,6 +451,15 @@ let items = document.querySelectorAll('.item-cours>.item__body');
 // 	prog.style.width = scrolled + "%";
 
 // } ;
+let slider = document.getElementById("myRange");
+let output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+} 
+document.getElementById("myRange").step = "50";;
 
 
 function testWebP(callback) {
@@ -527,3 +536,4 @@ image__video.addEventListener('click', function () {
 		video.pause();
 	}
 })
+
