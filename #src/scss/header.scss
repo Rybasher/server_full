@@ -360,9 +360,12 @@ header {
 								font-weight: 500;
 								color: #000000;
 								transition: all 0.4s ease 0s;
+								@include tablet {
+									transition: all 0s ease 0s;
+								}
 
 								@include big_screnn {
-									font-size: 22px;
+									font-size: 18px;
 								}
 							}
 							.header__link:hover {
@@ -377,7 +380,11 @@ header {
 							}
 							.header__link:hover::after {
 								width: 100%;
+
 								transition: all 0.3s ease 0s;
+								@include tablet {
+									transition: all 0s ease 0s;
+								}
 							}
 						}
 					}
@@ -391,7 +398,7 @@ header {
 						top: 0;
 
 						width: 50vw;
-						height: 90vh;
+						height: 500px;
 						z-index: 10;
 						background: rgb(255, 255, 255);
 						box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.425);
@@ -462,33 +469,54 @@ header {
 						}
 
 						.header__menu {
-							margin-top: -100px;
+							// margin-top: -100px;
 							flex-direction: column;
 							align-items: flex-start;
 							justify-content: center;
-							padding: 0 30px;
+							position: absolute;
+							top: 50px;
+							// border: 1px solid #000;
+							padding: 0 0 0 20px;
+							@include big_phone {
+								// margin-top: -100px;
+							}
 							.header__li {
 								margin-top: 10px;
-								a {
-									color: blue;
+								@include big_phone {
+									margin-top: 20px;
+								}
+								.header__link {
+									color: rgb(0, 0, 0);
 									font-size: 30px;
+									@include tablet {
+										font-size: 25px;
+									}
 									@include big_phone {
 										font-size: 20px;
 									}
+									@include phone {
+										font-size: 18px;
+										// font-size: calc(15px + 3 * (100vw / 1600));
+									}
 								}
 								.header__link:hover {
-									color: #ffffff;
+									color: #52c3f1;
 								}
+								.header__link:active {
+									color: #52c3f1;
+								}
+
 								.header__link::after {
 									content: "";
 									width: 0;
 									height: 3px;
-									background: #ffffff;
+									margin: 3px 0;
+									background: #52c3f1;
 									display: block;
 								}
 								.header__link:hover::after {
 									width: 100%;
-									transition: all 0.3s ease 0s;
+									// transition: all 0.2s ease 0s;
 								}
 							}
 						}

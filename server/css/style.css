@@ -802,6 +802,7 @@ header .header__container .header__body .body__footer .header__nav .header__menu
   right: 20px;
   z-index: 3;
   display: none;
+  opacity: 1;
 }
 
 .menu__icon span {
@@ -819,6 +820,10 @@ header .header__container .header__body .body__footer .header__nav .header__menu
 
 .menu__icon span:last-child {
   top: 16px;
+}
+
+.icon__menu.active {
+  opacity: 0;
 }
 
 .icon__menu.active span {
@@ -4250,7 +4255,7 @@ header.show {
   }
 
   header .header__container .header__body .body__footer .header__nav .header__menu .header__li .header__link {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .section__swiper .swiper-container-courses .swiper-wrapper .swiper-slide .slide__inside .slide__text p:first-child {
@@ -4446,7 +4451,7 @@ header.show {
     right: 0;
     top: 0;
     width: 50vw;
-    height: 90vh;
+    height: 500px;
     z-index: 10;
     background: white;
     -webkit-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.425);
@@ -4510,7 +4515,6 @@ header.show {
   }
 
   header .header__container .header__body .body__footer .header__nav.active .header__menu {
-    margin-top: -100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4521,35 +4525,39 @@ header.show {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0 30px;
+    position: absolute;
+    top: 50px;
+    padding: 0 0 0 20px;
   }
 
   header .header__container .header__body .body__footer .header__nav.active .header__menu .header__li {
     margin-top: 10px;
   }
 
-  header .header__container .header__body .body__footer .header__nav.active .header__menu .header__li a {
-    color: blue;
+  header .header__container .header__body .body__footer .header__nav.active .header__menu .header__li .header__link {
+    color: black;
     font-size: 30px;
   }
 
   header .header__container .header__body .body__footer .header__nav.active .header__menu .header__li .header__link:hover {
-    color: #ffffff;
+    color: #52c3f1;
+  }
+
+  header .header__container .header__body .body__footer .header__nav.active .header__menu .header__li .header__link:active {
+    color: #52c3f1;
   }
 
   header .header__container .header__body .body__footer .header__nav.active .header__menu .header__li .header__link::after {
     content: "";
     width: 0;
     height: 3px;
-    background: #ffffff;
+    margin: 3px 0;
+    background: #52c3f1;
     display: block;
   }
 
   header .header__container .header__body .body__footer .header__nav.active .header__menu .header__li .header__link:hover::after {
     width: 100%;
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
   }
 
   .footer .footer__container .footer__top .container .menu {
@@ -4705,7 +4713,11 @@ header.show {
     width: 70vw;
   }
 
-  header .header__container .header__body .body__footer .header__nav.active .header__menu .header__li a {
+  header .header__container .header__body .body__footer .header__nav.active .header__menu .header__li {
+    margin-top: 20px;
+  }
+
+  header .header__container .header__body .body__footer .header__nav.active .header__menu .header__li .header__link {
     font-size: 20px;
   }
 }
@@ -4720,6 +4732,16 @@ header.show {
 @media (max-width: 1200px) and (max-width: 768px) {
   header .header__container .header__body .body__footer .header__nav.active .close {
     top: 30px;
+  }
+
+  header .header__container .header__body .body__footer .header__nav.active .header__menu .header__li .header__link {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1200px) and (max-width: 420px) {
+  header .header__container .header__body .body__footer .header__nav.active .header__menu .header__li .header__link {
+    font-size: 18px;
   }
 }
 
@@ -4821,6 +4843,18 @@ header.show {
 
   header .header__container .header__body .body__footer .header__nav {
     top: 100px;
+  }
+
+  header .header__container .header__body .body__footer .header__nav .header__menu .header__li .header__link {
+    -webkit-transition: all 0s ease 0s;
+    -o-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
+  }
+
+  header .header__container .header__body .body__footer .header__nav .header__menu .header__li .header__link:hover::after {
+    -webkit-transition: all 0s ease 0s;
+    -o-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
   }
 
   .footer .footer__container .footer__top .container {
@@ -5781,6 +5815,14 @@ header.show {
 }
 
  @media (max-width: 1200px) and (max-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1200px) and (max-width: 420px){
 
 @supports (-webkit-appearance:none){
 

@@ -7,6 +7,7 @@
 	z-index: 3;
 
 	display: none;
+	opacity: 1;
 	@include laptop {
 		display: block;
 		top: 50px;
@@ -34,6 +35,7 @@
 	}
 }
 .icon__menu.active {
+	opacity: 0;
 	span {
 		display: none;
 		// background: white;
