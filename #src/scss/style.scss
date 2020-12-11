@@ -183,8 +183,8 @@ header.show {
 	width: 100%;
 	height: 100%;
 	display: flex;
-	@include big_phone {
-		padding: 30px 30px;
+	@include tablet {
+		padding: 90px 30px;
 	}
 	// overflow-x: hidden;
 }
@@ -350,8 +350,8 @@ header.show {
 						transform: translate(-50%, -50%);
 
 						object-fit: contain;
-						width: 70%;
-						height: 70%;
+						width: 55%;
+						height: 55%;
 					}
 				}
 			}
@@ -427,6 +427,7 @@ header.show {
 		.container__body {
 			margin-top: 44px;
 			display: flex;
+			// border: 1px solid #000;
 			justify-content: space-between;
 			flex-wrap: wrap;
 			perspective: 400px;
@@ -437,7 +438,7 @@ header.show {
 				align-items: center;
 			}
 			.item {
-				flex-basis: 28%;
+				flex-basis: 25%;
 				// border: 1px solid #000;
 				background: white;
 				transition: all 0.3s ease 0s;
@@ -488,12 +489,14 @@ header.show {
 						}
 					}
 					p {
-						// max-width: 344px;
-						max-height: 130px;
+						padding: 0 20px 0 0px;
+						// max-width: 355px;
+						max-height: 150px;
 						overflow: hidden;
 						margin-top: 30px;
 						font-family: "Roboto", sans-serif;
 						color: #000000;
+						// border: 1px solid #000;
 						font-size: 19px;
 						font-size: calc(9px + 10 * (100vw / 1400));
 						font-weight: 400;
@@ -989,6 +992,13 @@ header.show {
 					font-weight: 400;
 					font-style: normal;
 					background-color: #52c3f1;
+				}
+				button:hover {
+					background: white;
+					padding: 8.5px 69px;
+
+					border: 2px solid #52c3f1;
+					color: #52c3f1;
 				}
 			}
 		}

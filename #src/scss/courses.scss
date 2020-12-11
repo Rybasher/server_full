@@ -226,6 +226,10 @@
 								padding: 5px 20px;
 							}
 						}
+						button:hover {
+							background: white;
+							color: rgba(14, 13, 107, 0.877);
+						}
 					}
 					.slide__image {
 						width: 50%;
@@ -651,14 +655,14 @@
 				}
 				.text {
 					flex-basis: 65%;
-					font-size: 30px;
+					font-size: 28px;
 					color: white;
 					// color: black;
 
-					font-size: calc(15px + 15 * (100vw / 1600));
+					font-size: calc(14px + 14 * (100vw / 1600));
 					font-family: "Roboto", sans-serif;
 					@include big_screnn {
-						font-size: 30px;
+						font-size: px;
 					}
 				}
 			}
@@ -763,9 +767,13 @@
 					justify-content: center;
 					overflow: hidden;
 					img {
+						position: absolute;
+						top: 50%;
+						left: 55%;
+						transform: translate(-50%, -50%);
 						@include tablet {
-							width: 100%;
-							height: 100%;
+							width: 60%;
+							height: 60%;
 						}
 						@include phone {
 							position: absolute;
@@ -806,7 +814,8 @@
 				color: white;
 				font-size: 35px;
 				font-family: "Roboto", sans-serif;
-				transition: all 0.3s ease 0s;
+				// transition: all 0.3s ease 0s;
+				position: relative;
 
 				@include tablet {
 					font-size: 20px;
@@ -816,9 +825,11 @@
 			}
 			button:hover {
 				background: none;
+				padding: 3.5px 58px;
+
 				border: 2px solid #52c3f1;
 				color: #52c3f1;
-				transition: all 0.3s ease 0s;
+				// transition: all 0.3s ease 0s;
 			}
 		}
 	}

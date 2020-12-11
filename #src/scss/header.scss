@@ -304,6 +304,11 @@ header {
 									font-size: 16px;
 								}
 							}
+							button:hover {
+								background: white;
+								border: 2px solid #52c3f1;
+								color: #52c3f1;
+							}
 						}
 					}
 				}
@@ -330,7 +335,7 @@ header {
 						height: 90vh;
 						top: 170px;
 
-						left: -2000px;
+						right: -2000px;
 						transition: all 0.4s ease 0s;
 					}
 					@include tablet {
@@ -340,6 +345,13 @@ header {
 						width: 100%;
 						display: flex;
 						justify-content: space-between;
+						transition: all 0.4s ease 0s;
+						@include laptop {
+							flex-direction: column;
+							align-items: flex-start;
+							justify-content: center;
+						}
+
 						.header__li {
 							.header__link {
 								font-family: "Roboto", sans-serif;
@@ -347,6 +359,8 @@ header {
 								font-size: calc(8px + 12 * (100vw / 1400));
 								font-weight: 500;
 								color: #000000;
+								transition: all 0.4s ease 0s;
+
 								@include big_screnn {
 									font-size: 22px;
 								}
@@ -371,30 +385,96 @@ header {
 				@include laptop {
 					.header__nav.active {
 						position: absolute;
-						left: 0px;
-						top: 170px;
+						// left: 0px;
+						right: 0;
+						// top: 170px;
+						top: 0;
 
-						width: 100vw;
+						width: 50vw;
 						height: 90vh;
 						z-index: 10;
-						background: rgb(137, 217, 236);
+						background: rgb(255, 255, 255);
+						box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.425);
 						align-items: center;
 						justify-content: center;
 						transition: all 0.4s ease 0s;
+						@include laptop {
+							// top: 135px;
+						}
 						@include tablet {
-							top: 100px;
+							// top: 100px;
+						}
+						@include big_phone {
+							width: 70vw;
+						}
+						.close {
+							width: 30px;
+							height: 30px;
+							// border: 1px solid #000;
+							position: fixed;
+							right: 20px;
+							z-index: 3;
+
+							display: none;
+							@include laptop {
+								display: block;
+								top: 50px;
+							}
+							@include tablet {
+								top: 30px;
+							}
+
+							span {
+								position: absolute;
+								top: 8px;
+								left: 0;
+								width: 100%;
+								height: 2px;
+								background: black;
+								// transition: all 0.3s ease 0s;
+							}
+							span:first-child {
+								top: 0px;
+								// transition: all 0.3s ease 0s;
+							}
+							span:last-child {
+								top: 16px;
+								// transition: all 0.3s ease 0s;
+							}
+						}
+						.close.active {
+							span {
+								display: none;
+								background: black;
+								&:first-child {
+									top: 10px;
+									transform: rotate(45deg);
+									display: block;
+									// transition: all 0.3s ease 0s;
+								}
+								&:last-child {
+									top: 10px;
+									transform: rotate(-45deg);
+									display: block;
+									// transition: all 0.3s ease 0s;
+								}
+							}
 						}
 
 						.header__menu {
 							margin-top: -100px;
 							flex-direction: column;
-							align-items: center;
+							align-items: flex-start;
 							justify-content: center;
+							padding: 0 30px;
 							.header__li {
 								margin-top: 10px;
 								a {
 									color: blue;
 									font-size: 30px;
+									@include big_phone {
+										font-size: 20px;
+									}
 								}
 								.header__link:hover {
 									color: #ffffff;
