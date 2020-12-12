@@ -121,7 +121,8 @@
 						li {
 							margin-top: 30px;
 							color: #331b7b;
-							font-family: Roboto;
+							font-family: "Roboto", sans-serif;
+
 							font-size: 22px;
 							font-size: calc(10px + 12 * (100vw / 1400));
 							font-weight: 700;
@@ -135,7 +136,8 @@
 								margin-top: 36px;
 								li {
 									color: #331b7b;
-									font-family: Roboto;
+									font-family: "Roboto", sans-serif;
+
 									font-size: 24px;
 									font-size: calc(10px + 14 * (100vw / 1400));
 									font-weight: 400;
@@ -153,6 +155,7 @@
 					}
 					.ver__ul {
 						width: 15%;
+						margin-left: 20px;
 						@include laptop {
 							margin-top: 40px;
 						}
@@ -163,7 +166,8 @@
 						}
 						li {
 							color: #331b7b;
-							font-family: Roboto;
+							font-family: "Roboto", sans-serif;
+
 							font-size: 22px;
 							font-size: calc(10px + 12 * (100vw / 1400));
 							font-weight: 700;
@@ -233,7 +237,8 @@
 							h2 {
 								color: #63c8f0;
 
-								font-family: Roboto;
+								font-family: "Roboto", sans-serif;
+
 								font-size: 22px;
 								font-size: calc(10px + 12 * (100vw / 1400));
 								font-weight: 700;
@@ -244,7 +249,8 @@
 							}
 							p {
 								color: #ffffff;
-								font-family: Roboto;
+								font-family: "Roboto", sans-serif;
+
 								font-size: 19px;
 								font-size: calc(10px + 9 * (100vw / 1400));
 								font-weight: 400;
@@ -281,11 +287,13 @@
 			background-color: #331b7b;
 			// border: 1px solid #000;
 			align-items: flex-start;
+			padding: 0 30px;
 
 			.container {
 				padding: 0 0 81px 0;
 				color: #ffffff;
-				font-family: Roboto;
+				font-family: "Roboto", sans-serif;
+
 				font-size: 22px;
 				font-weight: 400;
 				// line-height: 87.63px;

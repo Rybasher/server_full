@@ -421,6 +421,7 @@
 				flex-direction: column;
 				// border: 1px solid #000;
 				margin-bottom: 30px;
+
 				@include big_phone {
 					flex-basis: 100%;
 				}
