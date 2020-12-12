@@ -546,13 +546,10 @@
 				.text {
 					flex-basis: 65%;
 					font-size: 30px;
-					font-size: calc(15px + 15 * (100vw / 1600));
+					font-size: calc(14px + 14 * (100vw / 1600));
 					font-family: "Roboto", sans-serif;
 					@include big_screnn {
-						font-size: 30px;
-					}
-					@media (min-width: 1600px) {
-						font-size: 30px;
+						font-size: 28px;
 					}
 				}
 			}

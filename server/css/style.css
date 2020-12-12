@@ -2881,7 +2881,7 @@ button.swiper-pagination-bullet {
   -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
   font-size: 30px;
-  font-size: calc(15px + 15 * (100vw / 1600));
+  font-size: calc(14px + 14 * (100vw / 1600));
   font-family: "Roboto", sans-serif;
 }
 
@@ -3356,60 +3356,43 @@ button.swiper-pagination-bullet {
   width: 100%;
 }
 
-.section__creating .container__creating .container__footer .slidecontainer {
+.section__creating .container__creating .container__footer .slideContainer {
   width: 100%;
 }
 
-.section__creating .container__creating .container__footer .slidecontainer input[type="range"] {
-  overflow: hidden;
+.section__creating .container__creating .container__footer .slideContainer .range__slider {
+  -webkit-appearance: none;
   width: 100%;
-  -webkit-appearance: none;
-  background-color: #f1faff;
-  height: 20px;
+  height: 10px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #0f1fb3), color-stop(10%, #52c3f1));
+  background: -o-linear-gradient(left, #0f1fb3 50%, #52c3f1 10%);
+  background: linear-gradient(90deg, #0f1fb3 50%, #52c3f1 10%);
+  outline: none;
+  -webkit-transition: 0.2s;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 12px;
 }
 
-.section__creating .container__creating .container__footer .slidecontainer input[type="range"]::-webkit-slider-runnable-track {
-  height: 20px;
+.section__creating .container__creating .container__footer .slideContainer .range__slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  color: #220d97;
-}
-
-.section__creating .container__creating .container__footer .slidecontainer input[type="range"]::-webkit-slider-thumb {
-  width: 20px;
-  -webkit-appearance: none;
-  height: 20px;
-  background: #27006e;
-  -webkit-box-shadow: -80px 0 0 80px #110674;
-          box-shadow: -80px 0 0 80px #110674;
-}
-
-.section__creating .container__creating .container__footer .slidecontainer .slider::-moz-range-thumb {
+  appearance: none;
   width: 20px;
   height: 20px;
-  border: none;
+  background: #0f1fb3;
   border-radius: 50%;
-  background: #110674;
+  border: none;
   cursor: pointer;
 }
 
-.section__creating .container__creating .container__footer .slidecontainer input[type="range"]::-moz-range-progress {
-  height: 50%;
-  background-color: #110674;
-}
-
-.section__creating .container__creating .container__footer .slidecontainer input[type="range"]::-moz-range-track {
-  height: 50%;
-  background-color: #29dbe7;
-}
-
-.section__creating .container__creating .container__footer .slidecontainer input[type="range"]::-ms-fill-lower {
-  height: 50%;
-  background-color: #110674;
-}
-
-.section__creating .container__creating .container__footer .slidecontainer input[type="range"]::-ms-fill-upper {
-  height: 50%;
-  background-color: #110674;
+.section__creating .container__creating .container__footer .slideContainer .range__slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #0f1fb3;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .section__creating .container__creating .container__footer .years {
@@ -4426,10 +4409,6 @@ header.show {
   .footer .footer__container .footer__body .container .container__inside .one__more .item p {
     font-size: 19px;
   }
-
-  .section__home-adv .container__home-adv .container__body .item .text {
-    font-size: 30px;
-  }
 }
 
 @media (min-width: 1700px) {
@@ -4478,7 +4457,7 @@ header.show {
   }
 
   .section__home-adv .container__home-adv .container__body .item .text {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .section__about-col .container__about-col .container__list .list__header h3 {
@@ -4878,6 +4857,10 @@ header.show {
     font-size: calc(15px + 10 * (100vw / 1600));
     margin-top: 20px;
     line-height: 25px;
+  }
+
+  .section__creating .container__creating .container__footer .years .cont {
+    width: 53%;
   }
 
   header {
@@ -5762,6 +5745,10 @@ header.show {
 
   .section__creating {
     padding: 30px 30px;
+  }
+
+  .section__creating .container__creating .container__footer .years .cont {
+    width: 55%;
   }
 
   .section__spec .container__spec .spec__body .spec__img {
