@@ -451,12 +451,6 @@ let items = document.querySelectorAll('.item-cours>.item__body');
 // 	prog.style.width = scrolled + "%";
 
 // } ;
-let range_slider = document.querySelector('.range__slider');
-	range_slider.addEventListener('mousemove', function () {
-		let x = range_slider.value;
-		let color = 'linear-gradient(90deg, rgb(15, 31, 179)' + x + '%, rgb(15, 168, 179)' + x + '%)';
-		range_slider.style.background = color;
-	});;
 $(document).ready(function ($) {
 
 	$('.img__form').click(function () {
@@ -495,6 +489,8 @@ $(document).ready(function ($) {
 		});
 	} else { $('.education__list').after().hide(); }
 });;
+;
+
 
 
 function testWebP(callback) {
@@ -515,6 +511,19 @@ testWebP(function (support) {
 	}
 });
 
+function range(){
+	let range_slider = document.querySelector('.range__slider');
+	let x = range_slider.value;
+	let color = 'linear-gradient(90deg, rgb(15, 31, 179)' + x + '%, rgb(15, 168, 179)' + x + '%)';
+	range_slider.style.background = color;
+
+}
+// range_slider.addEventListener('mousemove', function () {
+// 	console.log("asd");
+// 	let x = range_slider.value;
+// 	let color = 'linear-gradient(90deg, rgb(15, 31, 179)' + x + '%, rgb(15, 168, 179)' + x + '%)';
+// 	range_slider.style.background = color;
+// });
 
 
 
@@ -533,5 +542,5 @@ image__video.addEventListener('click', function () {
 	else {
 		video.pause();
 	}
-})
+});
 
