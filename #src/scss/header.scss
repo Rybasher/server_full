@@ -421,7 +421,7 @@ header {
 							position: fixed;
 							right: 20px;
 							z-index: 3;
-
+							cursor: pointer;
 							display: none;
 							@include laptop {
 								display: block;
@@ -475,6 +475,9 @@ header {
 							justify-content: center;
 							position: absolute;
 							top: 50px;
+							@include tablet {
+								top: 80px;
+							}
 							// border: 1px solid #000;
 							padding: 0 0 0 20px;
 							@include big_phone {
@@ -489,13 +492,13 @@ header {
 									color: rgb(0, 0, 0);
 									font-size: 30px;
 									@include tablet {
-										font-size: 25px;
+										font-size: 22px;
 									}
 									@include big_phone {
-										font-size: 20px;
+										font-size: 16px;
 									}
 									@include phone {
-										font-size: 18px;
+										font-size: 16px;
 										// font-size: calc(15px + 3 * (100vw / 1600));
 									}
 								}

@@ -114,6 +114,35 @@ if (document.documentElement.clientWidth < "767") {
 		// Optional parameters
 		direction: 'horizontal',
 		loop: true,
+		slidesPerView: 2,
+		slidesPerGroup: 2,
+		spaceBetween: 30,
+
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'progressbar'
+		},
+
+
+		// Navigation arrows
+		// navigation: {
+		// 	nextEl: '.swiper-button-next',
+		// 	prevEl: '.swiper-button-prev',
+		// },
+
+		// And if we need scrollbar
+		// scrollbar: {
+		// 	el: '.swiper-scrollbar',
+		// },
+	})
+
+}
+if (document.documentElement.clientWidth < "567") {
+	var mySwiper = new Swiper('.swiper-container-life', {
+		// Optional parameters
+		direction: 'horizontal',
+		loop: true,
 		slidesPerView: 1,
 		slidesPerGroup: 1,
 		spaceBetween: 30,
